@@ -1,0 +1,1 @@
+import{P as a,I as o}from"./CeqOEz2w.js";const s=a((e,r)=>{const i=navigator.userAgent,t=/mobile|android|iphone|ipad|ipod/i.test(i);if(t&&e.path!=="/mobile")return o("/mobile");if(!t&&e.path!=="/desktop")return o("/desktop")});export{s as default};

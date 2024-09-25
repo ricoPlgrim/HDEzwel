@@ -1,1 +1,0 @@
-function l({req:n,redirect:o,route:t}){let e;e=navigator.userAgent;const i=/mobile|android|iphone|ipad|ipod/i.test(e);if(console.log("Current route:",t.path),console.log("User Agent:",e),t.path==="/")return i?(console.log("Redirecting to mobile..."),o("/mobile")):(console.log("Redirecting to desktop..."),o("/desktop"))}export{l as default};
