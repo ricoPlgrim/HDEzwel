@@ -1,0 +1,19 @@
+/* 예시: 기본적인 CSS 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    background-color: rgb(240, 240, 240);
+    height: 100%;
+    font-size:16px;
+  }
+  
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.6;
+  }
+
+  
