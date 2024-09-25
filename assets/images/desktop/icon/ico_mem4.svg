@@ -1,0 +1,14 @@
+<svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 285">
+<mask id="mask0_4583_8821" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="55" height="55">
+<rect id="Bounding box" width="55" height="55" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_4583_8821)">
+<path id="Vector" d="M47 38.5V17.5L28 7L9 17.5V38.5L28 49L47 38.5Z" stroke="black" stroke-miterlimit="10"/>
+<g id="Group">
+<path id="Vector_2" d="M24.8789 20.9102V38.2352" stroke="black" stroke-miterlimit="10"/>
+<path id="Vector_3" d="M29.6398 20.9108H24.8789V29.8175H29.6398C32.2563 29.8175 34.3789 27.8225 34.3789 25.3628C34.3789 22.9032 32.2563 20.9082 29.6398 20.9082V20.9108Z" stroke="black" stroke-miterlimit="10"/>
+</g>
+</g>
+</g>
+</svg>

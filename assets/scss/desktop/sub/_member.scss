@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+.member-wrap{
+	.title-wrap{
+		text-align: center;
+	}
+	.login-wrap{
+		width: 476px;
+		margin: 0 auto;
+		.btn-type4{
+			display: block;
+			margin-top: 16px;
+			text-align: center;
+		}
+	}
+	.form-wrap{
+		.form-item{
+			.list-type{
+				margin-top: 10px;
+			}
+            .newsletter{
+                .chk-box{
+					align-items: start;
+                    label{
+                        font-size: 13px;
+						line-height: 18px;
+                    }
+                }
+            }
+			&.terms-item{
+				font-size: 13px;
+				line-height: 18px;    
+				word-break: break-word;
+				a{
+					text-decoration: underline;
+					text-underline-position: from-font;
+					text-decoration-thickness: 0.75px;
+				}
+			}
+		}
+	}
+	.completed-wrap{
+		width: 476px;
+		margin: 0 auto;
+		.title-wrap{
+			margin-bottom: 0;
+			padding-bottom: 24px;
+			border-bottom: 1px solid $CTmain;
+		}
+	}
+	.loyalty-wrap{
+		width: 968px;
+		margin: 0 auto;
+		.btn-wrap{
+			width: 476px;
+			margin: 0 auto;
+		}
+		.btn-loyalty{
+			margin-top: 16px;
+			font-size: 14px;
+			line-height: 20px;
+			text-align: center;
+		}
+		.loyalty-member{
+			position: relative;
+			display: grid;
+			grid-template-columns: repeat(2, minmax(calc(50% - 112px), 1fr));
+			gap: 0 112px;
+			width: 100%;
+			padding: 32px 56px;
+			border-top: 1px solid $CTmain;
+			border-bottom: 1px solid $CBg;
+			&::before{
+				content: '';
+				@include abs(c);
+				display:block;
+				width:1px;
+				height: 95px;
+				background-color: $CBg2;
+			}
+			.user-info{
+				position: relative;
+				font-size: 15px;
+				line-height: 22px;
+				strong{
+					font-weight: 500;
+				}
+				.tag-type{
+					margin-top: 21px;
+					height: 22px;
+					padding: 0 11px;
+					border-color: $CTmain;
+					font-size: 12px;
+					font-weight: 400;
+					line-height: 22px;
+				}
+			}
+			.box-type{
+				dl{
+					&+dl{
+						margin-top: 16px;
+					}
+
+					dt,dd{
+						font-size: 13px;
+						line-height: 18px;
+					}
+					dd{
+						em{
+							color: $CBrand;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
+		.member-wrap{
+			margin-top: 72px;
+			.member-top{
+				margin: 0;
+			}
+			.member-box{
+				width: 810px;
+				margin: 0 auto;
+				padding: 32px 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+		}
+		.loyalty-box{
+			margin-top: 60px;
+			.title-type5{
+				margin-bottom: 16px;
+				&:last-of-type{
+					margin-top: 32px;
+				}
+			}
+			.tbl-type{
+				tr{
+					&:last-child{
+						th, td{
+							font-size: 14px;
+							line-height: 21px;
+							strong{
+								font-size: 14px;
+								line-height: 21px;
+							}
+						}
+					}
+					strong{
+						font-weight: 500;
+					}
+					.list-type{
+						margin-top: 10px;
+					}
+				}
+			}
+			.list-type{
+				li{
+					&.v2{
+						position: relative;
+						padding-left: 26px;
+						font-size: 12px;
+						line-height: 16px;
+						word-break: break-word;
+						@for $i from 0 to 10 {
+							&:nth-child(#{$i+2}) {
+								&::before{
+									content:'#{$i})';
+									position: absolute;
+									top: 0;
+									left: 10px;
+									width: inherit;
+									height: inherit;
+									background: transparent;
+									font-size: 12px;
+									line-height: 16px;
+								}
+							}
+						}
+					}
+				}
+			}
+			&+.loyalty-box{
+				margin-top: 73px;
+			}
+			&+.btn-wrap{
+				margin-top: 73px;
+			}
+		}
+	}
+	.wmuse-wrap{
+		width: 968px;
+		margin: 0 auto;
+	}
+	.sns-wrap{
+		margin-top: 56px;
+		.title-type6{
+			margin-bottom: 8px;
+			color: $CTsub;
+			text-align: center;
+		}
+		.btn-type{
+			position: relative;
+			span{
+				font-size: 15px;
+			}
+			[class^="ico-"]{
+				position: absolute;
+				top: 50%;
+				left: 15px;
+				transform: translateY(-50%);
+			}
+			&+.btn-type{
+				margin-top: 10px;
+			}
+		}
+	}
+	.member-wrap{
+		margin-top: 32px;
+		.member-top{
+			margin-bottom: 10px;
+			text-align: center;
+			.title-type6{
+				font-weight: 500;
+				margin-bottom: 8px;
+			}
+			.btn-type4{
+				font-size: 12px;
+				line-height: 16px;
+				color: $CTsub;
+			}
+		}
+		.btn-wrap{
+			margin-top: 24px;
+		}
+	}
+    .member-box{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(calc(33.33333333% - 16px), 1fr));
+        gap: 40px 16px;
+        width: 100%;
+		padding: 40px 0;
+        dl{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            dd{
+                margin-top: 4px;
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+
+.loyalty-box{
+	.level-box{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		background-color: #f8f8f8;
+		border-top: 1px solid $CBg2;
+		border-bottom: 1px solid $CBg2;
+		dl{
+			width: 100%;
+			height: 100%;
+			padding: 32px 0;
+			text-align: center;
+			dt{
+				strong{
+					@include font(15,22,500);
+				}
+				em{
+					display: block;
+					margin-top:4px;
+					@include font($w:500);
+				}
+			}
+			dd{
+				margin-top: 32px;
+				// padding-left: 87px;
+				text-align: center;
+				.list-type {
+					display:inline-block;
+				}
+			}
+			&:nth-child(2){
+				background-color: #fff;
+			}
+		}
+	}
+}

@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+[class^='title-wrap'] {
+	position: relative;
+	word-break: keep-all;
+	&.t-c {
+		text-align: center;
+	}
+	.btn-type4{
+		font-size: 15px;
+		line-height: 22px;
+		text-decoration: underline;
+		text-underline-position: from-font;
+		text-decoration-thickness: 0.75px;
+	}
+}
+
+.title-wrap {
+	margin-bottom: 56px;
+	[class^='title-type'] {
+		&+p{
+			margin-top: 32px;
+			font-size: 15px;
+			line-height: 22px;
+		}
+		&+.desc {
+			margin-top:8px;
+			@include font(14,20);
+			color:$CTsub2;
+		}
+	}
+	p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.count{
+		display: block;
+		margin-top: 50px;
+		font-size: 140px;
+		font-weight: 300;
+		line-height: 120px;
+	}
+	&.v2 {
+		margin-bottom:16px;
+	}
+}
+
+.title-type {
+	font-size: 100px;
+	line-height: 100px;
+	font-weight: 300;
+	&.v2{
+		font-size: 80px;
+		line-height: 92px;
+	}
+}
+
+.title-type2 {
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 46px; // gyj등 짤리는 문제로  40 > 46
+	&.v2{
+		font-weight: 400;
+	}
+}
+
+.title-type3 {
+	font-size: 36px;
+	line-height: 44px;
+}
+
+.title-type4 {
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.title-type5 {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.title-type6 {
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.title-text {
+	font-size: 21px;
+	line-height: 27px;
+}
+
+.tag-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tag-type {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 20px;
+	margin-left: 8px;
+	padding: 0 8px;
+	border: 0.5px solid $CTsub3;
+	font-size: 10px;
+	color: $CTmain;
+	font-weight: 300;
+	white-space: nowrap;
+	transition: .3s;
+	&:first-child {
+		margin-left: 0;
+	}
+	&.v2{
+		height: 30px;
+		padding: 0 12px;
+		border-color: $CTmain;
+		border-width: 1px;
+		font-size: 12px;
+		.ico-close{
+			margin-left: 2px;
+		}
+	}
+	&.v3{
+		height: 30px;
+		padding: 0 10px;
+		border-color: $CTmain;
+		font-size: 12px;
+		font-weight: 400;
+		.ico-close2{
+			margin-left: 8px;
+		}
+	}
+	&.refresh{
+		width: 30px;
+		padding: 0;
+	}
+}
+.tag-type2 {
+	@extend .tag-type;
+	// width: 100px;
+	height: 32px;
+	margin-left: 8px;
+	padding: 0 24px;
+	border: 1px solid $CBg2;
+	border-radius: 20px;
+	font-size: 12px;
+	&.active{
+		border-color: $CTmain
+	}
+}
+
+.tag-type3 {
+	display:inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding:0 8px;
+	height:18px;
+	@include font(12,16);
+	color:#fff;
+	background:$CTsub;
+	&.v2 {
+		background-color:$CBrand;
+	}
+}
+
+.tag-type4 {
+	display:inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding:0 8px;
+	height:16px;
+	@include font(10,16);
+	border:1px solid $CBrand;
+	color:$CBrand;
+}
+
+.box-type{
+	dl{
+		display: flex;
+		// align-items: center;
+		justify-content: space-between;
+		dt,dd{
+			@include font();
+		}
+		&+dl{
+			margin-top: 24px;
+		}
+	}
+}
+
+.box-type2 {
+	dl {
+		display:grid;
+		grid-template-columns:auto 2fr;
+		grid-gap:24px 64px;
+		dt {
+			@include font(18,25);
+		}
+		dd {
+			position:relative;
+			@include font(14,20);
+			padding-right:63px;
+			p {
+				& + p {
+					margin-top:6px;
+				}
+			}
+			.btn-type4 {
+				&.v3 {
+					position: absolute;
+					right:0;
+					top:0;
+					color:$CTsub2;
+				}
+			}
+		}
+	}
+	&.line {
+		dl {
+			grid-gap: 0;
+			dt {
+				padding-right:63px;
+			}
+			dt,dd {
+				padding-top:32px;
+				&:not(:last-of-type) {
+					padding-bottom:32px;
+					border-bottom:1px solid $CBg2;
+				}
+			}
+			.btn-type4 {
+				&.v3 {
+					top:32px;
+				}
+			}
+		}
+	}
+}
+
+.list-type {
+	text-align: left;
+	li {
+		position: relative;
+		padding-left: 10px;
+		font-size: 14px;
+		line-height: 18px;
+		word-break: break-word;
+		&:first-child {
+			margin-top: 0;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 7px;
+			left: 0;
+			width: 2px;
+			height: 2px;
+			background-color: $CTmain;
+			border-radius: 10px;
+		}
+		em{
+			color: $CBrand;
+		}
+		&+li{
+			margin-top: 8px;
+		}
+	}
+	&.v2{
+		li{
+			font-size: 12px;
+			line-height: 16px;
+		}
+	}
+}
+
+.list-type2{
+	li{
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		padding-left: 20px;
+		font-size: 12px;
+		line-height: 18px;
+		color: $CTsub;
+		&::before{
+			content: '';
+			@include abs(v);
+			left: 10px;
+			width: 1px;
+			height: 15px;
+			background-color: $CBg2;
+		}
+		&:first-child{
+			padding-left: 0;
+			&::before{
+				display: none;
+			}
+		}
+	}
+}
+
+.tooltip {
+	&-wrap {
+		position: relative;
+	}
+}
+
+.js_tooltip {
+	cursor: pointer;
+	display:inline-flex;
+	align-items: center;
+	gap:4px;
+	&_ico {
+		position:relative;
+	}
+	&_box {
+		display: none;
+		position: absolute;
+		top: 24px;
+		left: 0;
+		transform: translateX(0);
+		@include box(#fff, 5px, 16px, 1px solid $CTmain);
+		z-index: 20;
+		@include font(12,16);
+		word-break: break-word;
+		color:$CTmain;
+		max-width: 335px;
+		width: max-content;
+		cursor: auto;
+		&.active {
+			display:block;
+		}
+	}
+}
+
+.info-type{
+	display: flex;
+	align-items: center;
+	@include font($w:500);
+	&::before{
+		content: '';
+		display: inline-block;
+		margin-right: 8px;
+		@extend .ico-info3;
+	}
+}
+
+.info-guide {
+	margin-top:40px;
+	.desc {
+		margin-top: 8px;
+		@include font();
+		color: $CTsub;
+		word-break: break-word;
+		.link {
+			font-weight: 500;
+			text-decoration: underline;
+			text-underline-position: from-font;
+			text-decoration-thickness: 0.75px;
+		}
+	}
+}
+
+.side-box {
+	@include abs(v);
+	right: 0;
+	&.required {
+		@include font(12, 17);
+		color: $CTsub;
+		em {
+			color: $CBrand;
+		}
+	}
+}
+
+.side-box2 {
+	position: absolute;
+	top: 16px;
+	right: 0;
+}
+
+.focus {
+	color: $CBrand;
+}

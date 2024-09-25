@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+.tbl-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.tbl-type {
+	border-top: 1px solid $CBg2;
+	border-bottom: 1px solid $CBg2;
+
+	th,
+	td {
+		padding: 15px;
+		border-bottom: 1px solid $CBg2;
+		@include font();
+		text-align: center;
+		word-break: break-all;
+
+		&:not(:first-child) {
+			border-left: 1px solid $CBg2;
+		}
+
+		&.t-r {
+			text-align: right;
+		}
+
+		&.t-l {
+			text-align: left;
+		}
+	}
+
+	th {
+		background-color: $CBg4;
+		text-align: center;
+	}
+}
+
+.tbl-type2 {
+	border-top: 1px solid $CTmain;
+	border-bottom: 1px solid $CBg2;
+
+	th,
+	td {
+		border-bottom: 1px solid $CBg2;
+		@include font();
+		text-align: center;
+		vertical-align: middle;
+
+		&.t-r {
+			text-align: right;
+			padding-right: 40px;
+		}
+
+		&.t-l {
+			text-align: left;
+
+			&:first-child {
+				padding-left: 40px;
+			}
+		}
+
+	}
+
+	tbody {
+		td {
+			padding: 28px 8px;
+		}
+	}
+
+	thead {
+		th {
+			background-color: $CBg3;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
+	.title {
+		text-align: left;
+		@include text-hidden-one();
+		max-width: 530px
+	}
+
+	strong {
+		font-weight: 500;
+	}
+
+	.date {
+		color: $CTsub2;
+	}
+
+	.btn-type4 {
+		@include font();
+	}
+
+	.nodata-wrap {
+		padding: 160px 0;
+
+		.btn-wrap {
+			margin-top: 24px;
+		}
+	}
+
+	.tbl-item {
+		.row {
+			display: flex;
+			min-height: 79px;
+			align-items: center;
+			gap: 32px;
+			border-bottom: 1px solid $CBg2;
+			padding: 0 32px;
+
+			.col {
+				@include font();
+
+				&.end {
+					margin-left: auto;
+				}
+			}
+		}
+	}
+
+	.tbl-detail {
+		padding: 32px;
+		@include font(14, 20);
+	}
+
+	&.v2 {
+		border-top-color:$CBg2;
+	}
+}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@use 'common/helper' as *;
+
+@import 'common/base',
+'common/layout',
+'common/animation',
+'common/popup',
+'common/button',
+'common/icon',
+'common/text',
+'common/form',
+'common/swiper',
+'common/table',
+'common/component';

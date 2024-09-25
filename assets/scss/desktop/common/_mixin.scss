@@ -1,0 +1,140 @@
+
+@charset "UTF-8";
+
+//말줄임
+@mixin text-hidden($line: 1, $lineHeight: 16, $auto: null) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: calc(($lineHeight * $line) / $line);
+    //word-break: break-all;
+    white-space: initial;
+
+    @if $auto == auto {
+        //영역 자동
+        max-height: $lineHeight * $line;
+    }
+
+    @else {
+        //처음부터 영역잡히게
+        height: $lineHeight * $line;
+    }
+}
+
+@mixin text-hidden-one() {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin font($s: 13, $l: 18, $w: 400) {
+	font-size: $s+px;
+	font-weight: $w;
+	line-height: $l+px;
+}
+
+//svg icon : 컬러없는 아이콘 색변경 잦을때
+@mixin svgUrl($color: #fff, $value: null, $url: null) {
+    @if $value == null {
+        -webkit-mask: url($url) no-repeat 50% 50%;
+        mask: url($url) no-repeat 50% 50%;
+    }
+    @else {
+        -webkit-mask: url(@/assets/images/desktop/icon/#{$value}.svg) no-repeat 50% 50%;
+        mask: url(@/assets/images/desktop/icon/#{$value}.svg) no-repeat 50% 50%;
+    }
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: $color;
+}
+
+@mixin svg($value, $width: 16, $height: 16) {
+    display: inline-block;
+    width: $width;
+    height: $height; 
+    vertical-align: middle;
+    background-image: url(@/assets/images/desktop/icon/#{$value}.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+//정렬
+@mixin abs($abs: c) {
+    position: absolute;
+    @if $abs == h {
+        //horizontal 수평
+        left: 50%;
+        transform: translateX(-50%);
+    } @else if $abs == v {
+        //vertical 수직
+        top: 50%;
+        transform: translateY(-50%);
+    } @else if $abs == c {
+        //center 중앙
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// 숨김 처리
+@mixin hidden {
+    position: absolute;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+//벤더 프리픽스(속성,속성값,브라우저 추가)
+@mixin prefix($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+  
+    #{$property}: $value;
+}
+
+// 박스
+@mixin box($bg, $brd: 20, $pad: 0, $bd) {
+    background: $bg;
+    border-radius: $brd;
+    padding: $pad;
+    border: $bd //없을경우 none
+}
+
+//animation
+@mixin animation ($name, $duration, $timing-function: null, $delay: null, $count: null) {
+	animation-delay: $delay;
+	animation-duration: $duration;
+	animation-timing-function: $timing-function;
+	animation-name: $name;
+	animation-iteration-count: $count
+}
+
+@mixin keyframe ($animation_name) {
+	@keyframes #{$animation_name} {
+		@content;
+	}
+}
+
+//tablet
+@mixin tablet {
+    @media all and (min-width:768px) and (max-width:1023px) {
+        @content;
+    }
+}
+
+@mixin inner-box {
+    // @media all and (min-width:1377px) and (max-width:1470px) {
+    @media all and (max-width:1470px) {
+        @content;
+    }
+}

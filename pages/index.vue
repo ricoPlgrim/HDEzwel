@@ -1,20 +1,35 @@
 <template>
-  <Intro v-if="showIntro" @dimdHideComplete="handleDimdHideComplete" />
-  <Main />
+    <div>Redirecting...</div>
 </template>
+  
+<script setup lang="ts">
+import { ref, onMounted, watch } from 'vue'
+import { useRouter } from 'vue-router'
 
-<script setup>
-import { ref } from 'vue'
-import Intro from '@/components/Intro'
-import Main from '@/components/Main/Visual'
+// `ref`로 데이터 정의
+const userAgent = ref('');
+const isMobile = ref(false);
+const router = useRouter();
 
-const showIntro = ref(true)
+// 페이지 로드 시 실행
+onMounted(() => {
+    // 처음 페이지 로드 시 userAgent 값 설정
+    userAgent.value = navigator.userAgent
+    isMobile.value = /mobile|android|iphone|ipad|ipod/i.test(userAgent.value) 
 
-const handleDimdHideComplete = () => {
-  showIntro.value = false; // Intro가 끝나면 Main 컴포넌트로 전환
-}
+    // mounted에서 바로 리다이렉트 처리
+    if (isMobile.value) {
+        router.push('/mobile')
+    } else {
+        router.push('/desktop')
+    }
+})
 
-
+// 필요시 userAgent의 변화를 감지할 수 있도록 watch 설정
+watch(userAgent, (newVal) => {
+    isMobile.value = /mobile|android|iphone|ipad|ipod/i.test(newVal)
+    console.log('User Agent changed:', newVal)
+    console.log('isMobile changed:', isMobile.value)
+})
 </script>
-
-
+  
