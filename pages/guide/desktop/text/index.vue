@@ -275,8 +275,11 @@
 
 <script setup lang="ts">
     import GuideNav from '../GuideNav.vue';
-
 </script>
+<style scoped lang="scss">
+@import "@/assets/scss/desktop/common.scss";
+@import "@/assets/scss/guide.scss";
+</style>
   
 
 

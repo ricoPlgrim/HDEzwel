@@ -43,17 +43,22 @@
         </div>
 
     </div>
-</template>
-
+</template> 
+ 
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
 
-const route = useRoute()
+const route = useRoute();
 
 // 현재 경로가 지정된 경로와 일치하는지 확인하는 함수
 const isActive = (path: string) => {
     return route.path === path
 }
 </script>
+
+<style scoped lang="scss">
+@import "@/assets/scss/desktop/common.scss";
+@import "@/assets/scss/guide.scss";
+</style>
   
 

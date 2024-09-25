@@ -14,7 +14,7 @@
   </template>
   
   <script setup lang="ts">
-  import { defineProps, ref } from 'vue'
+  import { defineProps } from 'vue';
   
   interface MenuItem {
     name: string;
@@ -29,8 +29,23 @@
   
   // 활성화된 경로를 확인하는 함수
   const isActive = (path: string) => {
-    return window.location.pathname === path
-  }
+  // 현재 경로에서 마지막 부분을 추출
+  const currentPath = window.location.pathname.split('/').filter(Boolean).pop() || ''
+  // 비교 대상 경로에서 마지막 부분을 추출
+  const targetPath = path.split('/').filter(Boolean).pop() || ''
+
+  console.log("currentPath==>", currentPath)
+  console.log("targetPath===>", targetPath)
+  console.log(currentPath === targetPath)
+
+  return currentPath === targetPath
+}
+
+
   </script>
-  
+  <style scoped lang="scss">
+  @import "@/assets/scss/desktop/common.scss";
+  @import "@/assets/scss/guide.scss";
+  </style>
+    
  

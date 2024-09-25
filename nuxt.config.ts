@@ -1,7 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
-
   app: {
     head: {
       title: 'HDEzwel',
@@ -25,12 +23,24 @@ export default defineNuxtConfig({
   modules: [
   ],
 
-  // css: [
-  //   '@/assets/style/main.scss',
-  // ],
   css: [
     '@/assets/scss/reset.scss'  // 글로벌 SCSS 파일 경로 설정
   ],
+
+  build: {
+    // SCSS 관련 설정을 vite.build로 이동
+  },
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          // additionalData: `@import "@/assets/scss/variables.scss";`, // 필요 시 추가 SCSS 파일 가져오기
+          silenceDeprecations: ["legacy-js-api"], // 경고 메시지 억제
+        },
+      },
+    },
+  },
 
   compatibilityDate: '2024-09-25'
 })
