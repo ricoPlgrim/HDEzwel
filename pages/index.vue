@@ -3,7 +3,7 @@
 </template>
   
 <script setup lang="ts">
-import { ref, onMounted, watch } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 
 // `ref`로 데이터 정의
@@ -14,24 +14,26 @@ const router = useRouter();
 // 페이지 로드 시 실행
 onMounted(() => {
     // 처음 페이지 로드 시 userAgent 값 설정
-    userAgent.value = navigator.userAgent
-    isMobile.value = /mobile|android|iphone|ipad|ipod/i.test(userAgent.value)
+    userAgent.value = navigator.userAgent;
+    isMobile.value = /mobile|android|iphone|ipad|ipod/i.test(userAgent.value);
+});
 
-    setTimeout(() => {
-        if (isMobile.value) {
-            router.push('/mobile')
-        } else {
-            router.push('/desktop')
-        }
-    }, 2000) // 2초 지연 후 리디렉션
-})
+// computed를 사용해 모바일 여부에 따라 라우팅을 처리
+const routeRedirect = computed(() => {
+    if (isMobile.value) {
+        return '/mobile';
+    } else {
+        return '/desktop';
+    }
+});
 
-// 필요시 userAgent의 변화를 감지할 수 있도록 watch 설정
-watch(userAgent, (newVal) => {
-    isMobile.value = /mobile|android|iphone|ipad|ipod/i.test(newVal)
-    console.log('User Agent changed:', newVal)
-    console.log('isMobile changed:', isMobile.value)
-})
+// watchEffect를 사용해 computed가 변경될 때 라우팅 처리
+watchEffect(() => {
+    if (routeRedirect.value) {
+        router.push(routeRedirect.value);
+    }
+});
+
 </script>
 
 <style scoped>

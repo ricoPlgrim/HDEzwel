@@ -43,11 +43,9 @@ useHead({
     ]
 });
 
-
 </script>
 
-
+ 
 <style scoped lang="scss">
-@import "@/assets/scss/desktop/common.scss";
-@import "@/assets/scss/desktop/guide.scss";
+    @import "@/assets/scss/desktop/guide.scss";
 </style>

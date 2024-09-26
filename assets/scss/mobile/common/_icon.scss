@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-@media (max-width: 960px) {
+
 /* icon */
 [class^="ico-"] {
     display: inline-block;
@@ -24,10 +24,18 @@
 //background 처리
 .ico-logo{
     display: block;
-    width: toRem(30px);
-    height: toRem(20px);
+    width: 180px;
+    height: 26px;
     background-image: url("@/assets/images/logo.png");
 }
+
+@media (max-width: 960px) {
+    .ico-logo{
+        width: toRem(180px);
+        height: toRem(26px);
+    }
+}
+
 .ico-logo2{ 
     width: toRem(30px);
     height: toRem(30px);
@@ -479,4 +487,3 @@
 }
 
 
-}

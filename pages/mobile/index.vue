@@ -2,7 +2,7 @@
   <div>
     <Gnb />
     <div class="page-guide-content">
-      <h2 class="page-guide-title" id="app">Mobile</h2>
+      <h2 class="page-guide-title">Mobile</h2>
       <div class="guide-table">
         <table>
           <thead>
@@ -24,7 +24,7 @@
               <td class="depth3"></td>
               <td class="depth4"></td>
               <td>
-                <router-link to="/ui-guide">guide.html</router-link>
+                <router-link to="/guide/mobile">guide.html</router-link>
               </td>
               <td></td>
               <td></td>
@@ -60,10 +60,10 @@
 </template>
  
 <script setup>
-import Gnb from '@/components/Guide/Gnb.vue';
+  import Gnb from '@/components/Guide/Gnb.vue';
 </script>
 
-<style lang="scss">
-/* @import "@/assets/scss/mobile/common.scss"; */
-/* @import "@/assets/scss/guide.scss"; */
+<style lang="scss" scoped>
+   @import "@/assets/scss/mobile/common.scss"; 
+   @import "@/assets/scss/mobile/guide.scss";
 </style>

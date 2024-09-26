@@ -29,4 +29,9 @@ const isActive = (path: string) => {
     return route.path === path
 }
 </script>
+<style scoped lang="scss">
+    @import "@/assets/scss/desktop/common.scss"; 
+    @import "@/assets/scss/desktop/guide.scss";
+</style>
   
+

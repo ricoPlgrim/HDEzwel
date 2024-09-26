@@ -68,12 +68,13 @@ useHead({
   title: 'HDEzwel PC Guide',
   meta: [
     { name: 'viewport', content: 'width=1460' }
-  ]
+  ],
 });
 
+console.log( "desktop?" );
 </script>
 
-<style lang="scss">
-@import "@/assets/scss/desktop/common.scss";
-@import "@/assets/scss/desktop/guide.scss";
+<style lang="scss" scoped>
+   /* @import "@/assets/scss/desktop/common.scss"; */
+   @import "@/assets/scss/desktop/guide.scss";
 </style>
