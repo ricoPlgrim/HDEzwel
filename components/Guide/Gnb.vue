@@ -30,7 +30,3 @@ const isActive = (path: string) => {
 }
 </script>
   
-<style lang="scss">
-/* @import "@/assets/scss/guide.scss"; */
-</style>
-  

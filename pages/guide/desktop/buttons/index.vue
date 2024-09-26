@@ -1,19 +1,18 @@
 <template>
-    <div>
-        <GuideNav title="PC Guide" version="2024.12" :menuItems="[
-            { name: 'color', path: '/guide/desktop/color' },
-            { name: 'font', path: '/guide/desktop/fonts' },
-            { name: 'text', path: '/guide/desktop/text' },
-            { name: 'button', path: '/guide/desktop/buttons' },
-            { name: 'form', path: '/guide/desktop/forms' },
-            { name: 'component', path: '/guide/desktop/component' },
-            { name: 'icon', path: '/guide/desktop/icons' },
-            { name: 'table', path: '/guide/desktop/tables' },
-            { name: 'swiper', path: '/guide/desktop/swiper' },
-            { name: 'layerpop', path: '/guide/desktop/layerpop' },
-            { name: 'vimeo', path: '/guide/desktop/vimeo' }
-        ]" />
-  <div class="page-guide-content">
+	<GuideNav title="PC Guide" version="2024.12" :menuItems="[
+		{ name: 'colors', path: '/guide/desktop/colors' },
+		{ name: 'fonts', path: '/guide/desktop/fonts' },
+		{ name: 'texts', path: '/guide/desktop/texts' },
+		{ name: 'buttons', path: '/guide/desktop/buttons' },
+		{ name: 'forms', path: '/guide/desktop/forms' },
+		{ name: 'components', path: '/guide/desktop/components' },
+		{ name: 'icons', path: '/guide/desktop/icons' },
+		{ name: 'tables', path: '/guide/desktop/tables' },
+		{ name: 'swipers', path: '/guide/desktop/swipers' },
+		{ name: 'layerpops', path: '/guide/desktop/layerpops' },
+		{ name: 'videos', path: '/guide/desktop/videos' }
+	]" />
+	<div class="page-guide-content">
 		<h2 class="page-guide-title">BUTTON</h2>
 		<h3 class="page-guide-title2">btn-type</h3>
 		<div class="page-guide-box">
@@ -99,26 +98,29 @@
 		<div class="page-guide-box">
 			<div class="fixed-bottom" style="position:relative">
 				<div class="btn-type3 v3">
-					<button type="button" class="btn-wish"><i class="ico-like v2"></i><span class="hidden">wish</span></button>
+					<button type="button" class="btn-wish"><i class="ico-like v2"></i><span
+							class="hidden">wish</span></button>
 					<button type="button">ADD TO CART</button>
 				</div>
 			</div>
 			<br>
 			<div class="fixed-bottom" style="position:relative">
 				<div class="btn-type3 v3">
-					<button type="button" class="btn-wish active"><i class="ico-like v2"></i><span class="hidden">wish</span></button>
+					<button type="button" class="btn-wish active"><i class="ico-like v2"></i><span
+							class="hidden">wish</span></button>
 					<button type="button">ADD TO CART</button>
 				</div>
 			</div>
 			<br>
 			<div class="fixed-bottom" style="position:relative">
 				<div class="btn-type3 disabled">
-					<button type="button" class="btn-wish"><i class="ico-like v2"></i><span class="hidden">wish</span></button>
+					<button type="button" class="btn-wish"><i class="ico-like v2"></i><span
+							class="hidden">wish</span></button>
 					<button type="button" disabled="">OUT OF STOCK</button>
 				</div>
 			</div>
 			<br>
-			
+
 			<div class="fixed-bottom" style="position:relative">
 				<div class="btn-type3 v3">
 					<button type="button">
@@ -241,7 +243,7 @@
 			<!-- //tab -->
 		</div>
 
-		
+
 		<h3 class="page-guide-title2">paging</h3>
 		<div class="page-guide-box">
 			<div class="paging-wrap">
@@ -269,17 +271,24 @@
 			</div>
 		</div>
 	</div>
-
-    </div>
 </template>
 
 <script setup lang="ts">
-    import GuideNav from '../GuideNav.vue';
+import { useHead } from 'nuxt/app'
+import GuideNav from '../GuideNav.vue';
+
+useHead({
+	title: 'HDEzwel PC Guide',
+	meta: [
+		{ name: 'viewport', content: 'width=1460' }
+	]
+});
+
 </script>
   
 <style scoped lang="scss">
 @import "@/assets/scss/desktop/common.scss";
-@import "@/assets/scss/guide.scss";
+@import "@/assets/scss/desktop/guide.scss";
 </style>
   
 

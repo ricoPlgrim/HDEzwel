@@ -1,30 +1,17 @@
 <template>
-    <div>
-        <div class="page-guide-nav guide">
-            <h1 class="nav-title">
-                <nuxt-link to="/"><i class="ico-logo"></i><br>PC Guide <span>2024.12</span></nuxt-link>
-            </h1>
-            <ul class="nav">
-                <li :class="{ on: isActive('/guide/desktop/color') }">
-                    <nuxt-link to="/guide/desktop/color">color</nuxt-link>
-                </li>
-                <li :class="{ on: isActive('/guide/desktop/fonts') }">
-                    <nuxt-link to="/guide/desktop/fonts">font</nuxt-link>
-                </li>
-                <li :class="{ on: isActive('/guide/desktop/text') }">
-                    <nuxt-link to="/guide/desktop/text">text</nuxt-link>
-                </li>
-
-                <li><a href="button.html">button</a></li>
-                <li><a href="form.html">form</a></li>
-                <li><a href="component.html">component</a></li>
-                <li><a href="icon.html">icon</a></li>
-                <li><a href="table.html">table</a></li>
-                <li><a href="swiper.html">swiper</a></li>
-                <li><a href="layerpop.html">layerpop</a></li>
-                <li><a href="vimeo.html">vimeo</a></li>
-            </ul>
-        </div>
+        <GuideNav title="PC Guide" version="2024.12" :menuItems="[
+            { name: 'colors', path: '/guide/desktop/colors' },
+            { name: 'fonts', path: '/guide/desktop/fonts' },
+            { name: 'texts', path: '/guide/desktop/texts' },
+            { name: 'buttons', path: '/guide/desktop/buttons' },
+            { name: 'forms', path: '/guide/desktop/forms' },
+            { name: 'components', path: '/guide/desktop/components' },
+            { name: 'icons', path: '/guide/desktop/icons' },
+            { name: 'tables', path: '/guide/desktop/tables' },
+            { name: 'swipers', path: '/guide/desktop/swipers' },
+            { name: 'layerpops', path: '/guide/desktop/layerpops' },
+            { name: 'videos', path: '/guide/desktop/videos' }
+        ]" />
 
         <div class="page-guide-content">
             <h2 class="page-guide-title">GUIDE</h2>
@@ -41,24 +28,26 @@
 
             </div>
         </div>
+</template>
 
-    </div>
-</template> 
- 
+
+
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import { useHead } from 'nuxt/app'
+import GuideNav from '../desktop/GuideNav.vue';
 
-const route = useRoute();
+useHead({
+    title: 'HDEzwel PC Guide',
+    meta: [
+        { name: 'viewport', content: 'width=1460' }
+    ]
+});
 
-// 현재 경로가 지정된 경로와 일치하는지 확인하는 함수
-const isActive = (path: string) => {
-    return route.path === path
-}
+
 </script>
+
 
 <style scoped lang="scss">
 @import "@/assets/scss/desktop/common.scss";
-@import "@/assets/scss/guide.scss";
+@import "@/assets/scss/desktop/guide.scss";
 </style>
-  
-

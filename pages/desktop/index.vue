@@ -62,9 +62,18 @@
 
 <script setup>
 import Gnb from '@/components/Guide/Gnb.vue';
+import { useHead } from 'nuxt/app'
+
+useHead({
+  title: 'HDEzwel PC Guide',
+  meta: [
+    { name: 'viewport', content: 'width=1460' }
+  ]
+});
+
 </script>
 
 <style lang="scss">
 @import "@/assets/scss/desktop/common.scss";
-@import "@/assets/scss/guide.scss";
+@import "@/assets/scss/desktop/guide.scss";
 </style>

@@ -420,4 +420,4 @@ import Gnb from '@/components/Guide/Gnb.vue';
   
 <style lang="scss">
 @import "@/assets/scss/mobile/common.scss";
-@import "@/assets/scss/guide.scss";</style>
+@import "@/assets/scss/mobile/guide.scss";</style>

@@ -1,30 +1,29 @@
 @charset "UTF-8";
-@import '@/assets/scss/variable';
-// @import '@/assets/scss/desktop/common';
+@import '../assets/scss/desktop/common/variable';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
 
 html,
-body { 
+body {
 	overflow: visible;
 	font-family: 'Poppins';
 }
 
 .page-guide-nav {
-	position: fixed; 
+	position: fixed;
 	z-index: 99;
 	overflow: hidden;
 	overflow-y: auto;
 	left: 0;
 	top: 0;
-	width: 250px;
-	height: 100%; 
+	width: 328px;
+	height: 100%;
 	background: #FFF;
 	box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
 
 	.nav-title {
-		background: #0a9882;
+		background: #000;
 		padding: 20px 25px;
 		border-bottom: 1px solid #DDD;
 		color: #fff;
@@ -32,6 +31,10 @@ body {
 		letter-spacing: -1px;
 		font-weight: bold;
 		text-align: center;
+		.ico-logo{
+			display: block;
+			margin: 0 auto 10px;
+		}
 
 		a {
 			display: block;
@@ -42,7 +45,7 @@ body {
 		span {
 			margin-left: 4px;
 			font-size: 12px;
-			color: #fff;
+			color: $CTsub;
 			font-weight: 400;
 			letter-spacing: 0
 		}
@@ -86,8 +89,6 @@ body {
 					&:hover {
 						color: #000;
 						text-decoration: underline;
-						text-underline-position: from-font;
-						text-decoration-thickness: toRem(0.6px);
 					}
 				}
 
@@ -149,10 +150,11 @@ body {
 }
 
 .page-guide-content {
-	min-width: 800px;
-	padding-left: 300px;
+	min-width: 1376px;
+	// max-width: 1920px;
+	padding-left: 368px;
 	padding-top: 50px;
-	padding-right: 50px;
+	padding-right: 68px;
 	padding-bottom: 200px;
 	.btn-top{
 		position: fixed;
@@ -204,20 +206,6 @@ body {
 	}
 }
 
-.page-guide-title4 {
-	margin-bottom: 30px;
-	padding: 20px;
-	background: #f5f5f5;
-	font-size: 12px;
-	font-family: "Poppins", "Noto Sans KR";
-	font-weight: 600;
-	line-height: 1.2;
-	color: #111;
-  }
-  .page-guide-title4:nth-of-type(n+2) {
-	margin-top: 40px;
-  }
-
 .page-guide-box {
 	position: relative;
 	margin-bottom: 50px;
@@ -229,8 +217,6 @@ body {
 	>p {
 		a {
 			text-decoration: underline;
-			text-underline-position: from-font;
-			text-decoration-thickness: toRem(0.6px);
 			color: $CBrand;
 			font-family: 'Poppins';
 		}
@@ -400,8 +386,6 @@ body {
 	vertical-align: middle;
 	a{
 		text-decoration: underline;
-		text-underline-position: from-font;
-		text-decoration-thickness: toRem(0.6px);
 	}
 }
 
