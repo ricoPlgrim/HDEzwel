@@ -53,63 +53,63 @@
                     style="transition-duration: 0ms; transform: translate3d(-11115px, 0px, 0px);">
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" role="group"
                         aria-label="1 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" role="group"
                         aria-label="2 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" role="group"
                         aria-label="3 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="3"
                         role="group" aria-label="4 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
                         data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" role="group"
                         aria-label="1 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 5"
                         style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 5"
                         style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="3" role="group" aria-label="4 / 5"
                         style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="4" role="group"
                         aria-label="5 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0"
                         role="group" aria-label="1 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" role="group"
                         aria-label="2 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" role="group"
                         aria-label="3 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="3"
                         role="group" aria-label="4 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
                         data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 1235px;">
-                        <img src="../assets/images/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
+                        <img src="@/assets/images/desktop/temp/@temp_visaul.png" alt="SPRING BIG SALE 2023 EVENT">
                     </div>
                 </div>
                 <div class="swiper-paging2 swiper-pagination-custom swiper-pagination-horizontal"><em
@@ -137,7 +137,7 @@
                                 <a href="#">
                                     <div class="product-model">
                                         <div class="img-box">
-                                            <img src="../assets/images/temp/@temp_prd_01.png" alt="">
+                                            <img src="@/assets/images/desktop/temp/@temp_prd_01.png" alt="">
                                         </div>
                                     </div>
                                     <div class="product-info">
@@ -160,7 +160,7 @@
                                 <a href="#">
                                     <div class="product-model">
                                         <div class="img-box">
-                                            <img src="../assets/images/temp/@temp_prd_01.png" alt="">
+                                            <img src="@/assets/images/desktop/temp/@temp_prd_01.png" alt="">
                                         </div>
                                     </div>
                                     <div class="product-info">
@@ -186,7 +186,7 @@
                                 <a href="#">
                                     <div class="product-model">
                                         <div class="img-box">
-                                            <img src="../assets/images/temp/@temp_prd_01.png" alt="">
+                                            <img src="@/assets/images/desktop/temp/@temp_prd_01.png" alt="">
                                         </div>
                                     </div>
                                     <div class="product-info">
@@ -212,7 +212,7 @@
                                 <a href="#">
                                     <div class="product-model">
                                         <div class="img-box">
-                                            <img src="../assets/images/temp/@temp_prd_01.png" alt="">
+                                            <img src="@/assets/images/desktop/temp/@temp_prd_01.png" alt="">
                                         </div>
                                     </div>
                                     <div class="product-info">
@@ -238,7 +238,7 @@
                                 <a href="#">
                                     <div class="product-model">
                                         <div class="img-box">
-                                            <img src="../assets/images/temp/@temp_prd_01.png" alt="">
+                                            <img src="@/assets/images/desktop/temp/@temp_prd_01.png" alt="">
                                         </div>
                                     </div>
                                     <div class="product-info">
@@ -262,7 +262,7 @@
                                 <a href="#">
                                     <div class="product-model">
                                         <div class="img-box">
-                                            <img src="../assets/images/temp/@temp_prd_01.png" alt="">
+                                            <img src="@/assets/images/desktop/temp/@temp_prd_01.png" alt="">
                                         </div>
                                     </div>
                                     <div class="product-info">
@@ -286,7 +286,7 @@
                                 <a href="#">
                                     <div class="product-model">
                                         <div class="img-box">
-                                            <img src="../assets/images/temp/@temp_prd_01.png" alt="">
+                                            <img src="@/assets/images/desktop/temp/@temp_prd_01.png" alt="">
                                         </div>
                                     </div>
                                     <div class="product-info">
@@ -312,7 +312,7 @@
                                 <a href="#">
                                     <div class="product-model">
                                         <div class="img-box">
-                                            <img src="../assets/images/temp/@temp_prd_01.png" alt="">
+                                            <img src="@/assets/images/desktop/temp/@temp_prd_01.png" alt="">
                                         </div>
                                     </div>
                                     <div class="product-info">
@@ -353,40 +353,40 @@
                     style="transition-duration: 0ms; transform: translate3d(-3618.96px, 0px, 0px);">
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" role="group"
                         aria-label="4 / 6" style="width: 430.786px; margin-right: 16px;"><img
-                            src="../assets/images/temp/@temp_style1.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_style1.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" role="group"
                         aria-label="5 / 6" style="width: 430.786px; margin-right: 16px;"><img
-                            src="../assets/images/temp/@temp_style2.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_style2.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="5"
                         role="group" aria-label="6 / 6" style="width: 430.786px; margin-right: 16px;"><img
-                            src="../assets/images/temp/@temp_style3.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_style3.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group"
                         aria-label="1 / 6" style="width: 430.786px; margin-right: 16px;"><img
-                            src="../assets/images/temp/@temp_style1.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_style1.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="1" role="group"
                         aria-label="2 / 6" style="width: 430.786px; margin-right: 16px;"><img
-                            src="../assets/images/temp/@temp_style2.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_style2.png" alt="banner"></div>
                     <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 6"
-                        style="width: 430.786px; margin-right: 16px;"><img src="../assets/images/temp/@temp_style3.png"
+                        style="width: 430.786px; margin-right: 16px;"><img src="@/assets/images/desktop/temp/@temp_style3.png"
                             alt="banner"></div>
                     <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 6"
-                        style="width: 430.786px; margin-right: 16px;"><img src="../assets/images/temp/@temp_style1.png"
+                        style="width: 430.786px; margin-right: 16px;"><img src="@/assets/images/desktop/temp/@temp_style1.png"
                             alt="banner"></div>
                     <div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 6"
-                        style="width: 430.786px; margin-right: 16px;"><img src="../assets/images/temp/@temp_style2.png"
+                        style="width: 430.786px; margin-right: 16px;"><img src="@/assets/images/desktop/temp/@temp_style2.png"
                             alt="banner"></div>
                     <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="5" role="group" aria-label="6 / 6"
-                        style="width: 430.786px; margin-right: 16px;"><img src="../assets/images/temp/@temp_style3.png"
+                        style="width: 430.786px; margin-right: 16px;"><img src="@/assets/images/desktop/temp/@temp_style3.png"
                             alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0"
                         role="group" aria-label="1 / 6" style="width: 430.786px; margin-right: 16px;"><img
-                            src="../assets/images/temp/@temp_style1.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_style1.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="1"
                         role="group" aria-label="2 / 6" style="width: 430.786px; margin-right: 16px;"><img
-                            src="../assets/images/temp/@temp_style2.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_style2.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" role="group"
                         aria-label="3 / 6" style="width: 430.786px; margin-right: 16px;"><img
-                            src="../assets/images/temp/@temp_style3.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_style3.png" alt="banner"></div>
                 </div>
                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
@@ -399,60 +399,60 @@
                     style="transition-duration: 0ms; transform: translate3d(-9880px, 0px, 0px);">
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0"
                         role="group" aria-label="1 / 7" style="width: 1235px;"><img
-                            src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
                         data-swiper-slide-index="1" role="group" aria-label="2 / 7" style="width: 1235px;"><img
-                            src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2"
                         role="group" aria-label="3 / 7" style="width: 1235px;"><img
-                            src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" role="group"
-                        aria-label="4 / 7" style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png"
+                        aria-label="4 / 7" style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png"
                             alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" role="group"
-                        aria-label="5 / 7" style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png"
+                        aria-label="5 / 7" style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png"
                             alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5" role="group"
-                        aria-label="6 / 7" style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png"
+                        aria-label="6 / 7" style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png"
                             alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6" role="group"
-                        aria-label="7 / 7" style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png"
+                        aria-label="7 / 7" style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png"
                             alt="banner"></div>
                     <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 7"
-                        style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                        style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group"
-                        aria-label="2 / 7" style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png"
+                        aria-label="2 / 7" style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png"
                             alt="banner"></div>
                     <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" role="group" aria-label="3 / 7"
-                        style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                        style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 7"
-                        style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                        style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 7"
-                        style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                        style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide" data-swiper-slide-index="5" role="group" aria-label="6 / 7"
-                        style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                        style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide" data-swiper-slide-index="6" role="group" aria-label="7 / 7"
-                        style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                        style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0"
                         role="group" aria-label="1 / 7" style="width: 1235px;"><img
-                            src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
                         data-swiper-slide-index="1" role="group" aria-label="2 / 7" style="width: 1235px;"><img
-                            src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2"
                         role="group" aria-label="3 / 7" style="width: 1235px;"><img
-                            src="../assets/images/temp/@temp_banner.png" alt="banner"></div>
+                            src="@/assets/images/desktop/temp/@temp_banner.png" alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" role="group"
-                        aria-label="4 / 7" style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png"
+                        aria-label="4 / 7" style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png"
                             alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" role="group"
-                        aria-label="5 / 7" style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png"
+                        aria-label="5 / 7" style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png"
                             alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5" role="group"
-                        aria-label="6 / 7" style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png"
+                        aria-label="6 / 7" style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png"
                             alt="banner"></div>
                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6" role="group"
-                        aria-label="7 / 7" style="width: 1235px;"><img src="../assets/images/temp/@temp_banner.png"
+                        aria-label="7 / 7" style="width: 1235px;"><img src="@/assets/images/desktop/temp/@temp_banner.png"
                             alt="banner"></div>
                 </div>
                 <div class="swiper-paging2">

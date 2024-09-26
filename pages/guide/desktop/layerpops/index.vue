@@ -61,7 +61,7 @@
                 <div class="dim"></div>
                 <div class="pop-wrap v2">
                     <div class="pop-content v2">
-                        <img src="../assets/images/temp/@temp_pop_img.png" alt="">
+                        <img src="@/assets/images/desktop/temp/@temp_pop_img.png" alt="">
                     </div>
                     <div class="btn-wrap">
                         <a href="javascript:WC_UI.layerPopUp({selId:'#pop-layer3', st: 'close'})" class="btn-type5">DO
