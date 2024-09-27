@@ -3,8 +3,8 @@
 </template>
   
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, computed, onMounted, watchEffect } from 'vue';
+import { useRouter } from 'vue-router';
 
 // `ref`로 데이터 정의
 const userAgent = ref('');
@@ -30,7 +30,9 @@ const routeRedirect = computed(() => {
 // watchEffect를 사용해 computed가 변경될 때 라우팅 처리
 watchEffect(() => {
     if (routeRedirect.value) {
-        router.push(routeRedirect.value);
+        router.push(routeRedirect.value).then(() => {
+            window.location.reload(); // 라우팅 후 페이지 새로고침
+        });
     }
 });
 

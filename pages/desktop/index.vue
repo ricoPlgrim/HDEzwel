@@ -71,7 +71,6 @@ useHead({
   ],
 });
 
-console.log( "desktop?" );
 </script>
 
 <style lang="scss" scoped>

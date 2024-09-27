@@ -1,0 +1,219 @@
+
+@font-face {
+    font-family: "NotoSansKR-Thin";
+    src: local(※),url("@/assets/fonts/notosanskr/NotoSansKR-Thin.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/notosanskr/NotoSansKR-Thin.woff") 
+     format("woff"),url("@/assets/fonts/notosanskr/NotoSansKR-Thin.woff2") 
+     format("woff2"),url("@/assets/fonts/notosanskr/NotoSansKR-Thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal
+}
+ 
+@font-face {
+    font-family: "NotoSansKR-ExtraLight";
+    src: local(※),url("@/assets/fonts/notosanskr/NotoSansKR-ExtraLight.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/notosanskr/NotoSansKR-ExtraLight.woff") 
+     format("woff"),url("@/assets/fonts/notosanskr/NotoSansKR-ExtraLight.woff2") 
+     format("woff2"),url("@/assets/fonts/notosanskr/NotoSansKR-ExtraLight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "NotoSansKR-Light";
+    src: local(※),url("@/assets/fonts/notosanskr/NotoSansKR-Light.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/notosanskr/NotoSansKR-Light.woff") 
+     format("woff"),url("@/assets/fonts/notosanskr/NotoSansKR-Light.woff2") 
+     format("woff2"),url("@/assets/fonts/notosanskr/NotoSansKR-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "NotoSansKR-Medium";
+    src: local(※),url("@/assets/fonts/notosanskr/NotoSansKR-Medium.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/notosanskr/NotoSansKR-Medium.woff") 
+     format("woff"),url("@/assets/fonts/notosanskr/NotoSansKR-Medium.woff2") 
+     format("woff2"),url("@/assets/fonts/notosanskr/NotoSansKR-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "NotoSansKR-Regular";
+    src: local(※),url("@/assets/fonts/notosanskr/NotoSansKR-Regular.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/notosanskr/NotoSansKR-Regular.woff") 
+     format("woff"),url("@/assets/fonts/notosanskr/NotoSansKR-Regular.woff2") 
+     format("woff2"),url("@/assets/fonts/notosanskr/NotoSansKR-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "NotoSansKR-SemiBold";
+    src: local(※),url("@/assets/fonts/notosanskr/NotoSansKR-SemiBold.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/notosanskr/NotoSansKR-SemiBold.woff") 
+     format("woff"),url("@/assets/fonts/notosanskr/NotoSansKR-SemiBold.woff2") 
+     format("woff2"),url("@/assets/fonts/notosanskr/NotoSansKR-SemiBold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal
+}
+
+
+
+@font-face {
+    font-family: "NotoSansKR-Black";
+    src: local(※),url("@/assets/fonts/notosanskr/NotoSansKR-Black.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/notosanskr/NotoSansKR-Black.woff") 
+     format("woff"),url("@/assets/fonts/notosanskr/NotoSansKR-Black.woff2") 
+     format("woff2"),url("@/assets/fonts/notosanskr/NotoSansKR-Black.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "NotoSansKR-Bold";
+    src: local(※),url("@/assets/fonts/notosanskr/NotoSansKR-Bold.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/notosanskr/NotoSansKR-Bold.woff") 
+     format("woff"),url("@/assets/fonts/notosanskr/NotoSansKR-Bold.woff2") 
+     format("woff2"),url("@/assets/fonts/notosanskr/NotoSansKR-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "NotoSansKR-ExtraBold";
+    src: local(※),url("@/assets/fonts/notosanskr/NotoSansKR-ExtraBold.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/notosanskr/NotoSansKR-ExtraBold.woff") 
+     format("woff"),url("@/assets/fonts/notosanskr/NotoSansKR-ExtraBold.woff2") 
+     format("woff2"),url("@/assets/fonts/notosanskr/NotoSansKR-ExtraBold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal
+}
+ 
+
+
+
+
+@font-face {
+    font-family: "Metropolis-Thin";
+    src: local(※),url("@/assets/fonts/metropolis/Metropolis-Thin.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/metropolis/Metropolis-Thin.woff") 
+     format("woff"),url("@/assets/fonts/metropolis/Metropolis-Thin.woff2") 
+     format("woff2"),url("@/assets/fonts/metropolis/Metropolis-Thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Metropolis-Medium";
+    src: local(※),url("@/assets/fonts/metropolis/Metropolis-Medium.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/metropolis/Metropolis-Medium.woff") 
+     format("woff"),url("@/assets/fonts/metropolis/Metropolis-Medium.woff2") 
+     format("woff2"),url("@/assets/fonts/metropolis/Metropolis-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal
+}
+
+
+@font-face {
+    font-family: "Metropolis-Extra";
+    src: local(※),url("@/assets/fonts/metropolis/Metropolis-ExtraLight.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/metropolis/Metropolis-ExtraLight.woff") 
+     format("woff"),url("@/assets/fonts/metropolis/Metropolis-ExtraLight.woff2") 
+     format("woff2"),url("@/assets/fonts/metropolis/Metropolis-ExtraLight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: local(※),url("@/assets/fonts/metropolis/Metropolis-Light.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/metropolis/Metropolis-Light.woff") 
+     format("woff"),url("@/assets/fonts/metropolis/Metropolis-Light.woff2") 
+     format("woff2"),url("@/assets/fonts/metropolis/Metropolis-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal
+}
+
+
+@font-face {
+    font-family: "Metropolis";
+    src: local(※),url("@/assets/fonts/metropolis/Metropolis-Regular.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/metropolis/Metropolis-Regular.woff") 
+     format("woff"),url("@/assets/fonts/metropolis/Metropolis-Regular.woff2") 
+     format("woff2"),url("@/assets/fonts/metropolis/Metropolis-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Metropolis-Semi";
+    src: local(※),url("@/assets/fonts/metropolis/Metropolis-SemiBold.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/metropolis/Metropolis-SemiBold.woff") 
+     format("woff"),url("@/assets/fonts/metropolis/Metropolis-SemiBold.woff2") 
+     format("woff2"),url("@/assets/fonts/metropolis/Metropolis-SemiBold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: local(※),url("@/assets/fonts/metropolis/Metropolis-Bold.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/metropolis/Metropolis-Bold.woff") 
+     format("woff"),url("@/assets/fonts/metropolis/Metropolis-Bold.woff2") 
+     format("woff2"),url("@/assets/fonts/metropolis/Metropolis-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Metropolis-Extra-bold";
+    src: local(※),url("@/assets/fonts/metropolis/Metropolis-ExtraBold.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/metropolis/Metropolis-ExtraBold.woff") 
+     format("woff"),url("@/assets/fonts/metropolis/Metropolis-ExtraBold.woff2") 
+     format("woff2"),url("@/assets/fonts/metropolis/Metropolis-ExtraBold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: local(※),url("@/assets/fonts/metropolis/Metropolis-Black.eot?#iefix")
+     format("embedded-opentype"),url("@/assets/fonts/metropolis/Metropolis-Black.woff") 
+     format("woff"),url("@/assets/fonts/metropolis/Metropolis-Black.woff2") 
+     format("woff2"),url("@/assets/fonts/metropolis/Metropolis-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal
+}
+
+/* 클래스별 폰트 적용 */
+.en {
+    font-family: "Metropolis-Regular", sans-serif;
+    font-weight: normal;
+}
+
+.en-bold {
+    font-family: "Metropolis-Bold", sans-serif;
+    font-weight: bold;
+}
+
+.en-light {
+    font-family: "Metropolis-Light", sans-serif;
+    font-weight: 300;
+}
+
+.kr {
+    font-family: "NotoSansKR-Regular", sans-serif;
+    font-weight: normal;
+}
+
+.kr-bold {
+    font-family: "NotoSansKR-Bold", sans-serif;
+    font-weight: bold;
+}
+
+.kr-light {
+    font-family: "NotoSansKR-Light", sans-serif;
+    font-weight: 300;
+}
