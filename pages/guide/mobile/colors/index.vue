@@ -1,5 +1,5 @@
 <template>
-    <GuideNav title="PC Guide" version="2024.12" :menuItems="[
+    <GuideNav title="Mobile Guide" version="2024.12" :menuItems="[
         { name: 'colors', path: '/guide/mobile/colors' },
         { name: 'fonts', path: '/guide/mobile/fonts' },
         { name: 'texts', path: '/guide/mobile/texts' },

@@ -37,8 +37,8 @@ useHead({
 </script>
   
 <style scoped lang="scss">
-@import "@/assets/scss/mobile/common.scss";
-@import "@/assets/scss/mobile/guide.scss";
+    @import "@/assets/scss/mobile/common.scss";
+    @import "@/assets/scss/mobile/guide.scss";
 </style>
   
 
