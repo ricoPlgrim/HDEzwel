@@ -1,18 +1,5 @@
 <template>
-	<GuideNav title="Mobile Guide" version="2024.12" :menuItems="[
-		{ name: 'colors', path: '/guide/mobile/colors' },
-		{ name: 'fonts', path: '/guide/mobile/fonts' },
-		{ name: 'texts', path: '/guide/mobile/texts' },
-		{ name: 'buttons', path: '/guide/mobile/buttons' },
-		{ name: 'forms', path: '/guide/mobile/forms' },
-		{ name: 'components', path: '/guide/mobile/components' },
-		{ name: 'icons', path: '/guide/mobile/icons' },
-		{ name: 'tables', path: '/guide/mobile/tables' },
-		{ name: 'swipers', path: '/guide/mobile/swipers' },
-		{ name: 'layerpops', path: '/guide/mobile/layerpops' },
-		{ name: 'videos', path: '/guide/mobile/videos' }
-	]" />
-
+   <GuideNav title="Mobile Guide" version="2024.12" :menuItems="menuItems" />
 	<div class="page-guide-content">
 		<h2 class="page-guide-title">GUIDE</h2>
 		<div class="page-guide-box">
@@ -31,6 +18,7 @@
 <script setup lang="ts">
 import { useHead } from 'nuxt/app'
 import GuideNav from '../mobile/GuideNav.vue';
+import menuItems from '~/data/mobile/menuItems';
 
 useHead({
 	title: 'HDEzwel Mobile Guide',

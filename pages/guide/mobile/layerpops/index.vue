@@ -1,17 +1,5 @@
 <template>
-    <GuideNav title="Mobile Guide" version="2024.12" :menuItems="[
-        { name: 'colors', path: '/guide/mobile/colors' },
-        { name: 'fonts', path: '/guide/mobile/fonts' },
-        { name: 'texts', path: '/guide/mobile/texts' },
-        { name: 'buttons', path: '/guide/mobile/buttons' },
-        { name: 'forms', path: '/guide/mobile/forms' },
-        { name: 'components', path: '/guide/mobile/components' },
-        { name: 'icons', path: '/guide/mobile/icons' },
-        { name: 'tables', path: '/guide/mobile/tables' },
-        { name: 'swipers', path: '/guide/mobile/swipers' },
-        { name: 'layerpops', path: '/guide/mobile/layerpops' },
-        { name: 'videos', path: '/guide/mobile/videos' }
-    ]" />
+    <GuideNav title="Mobile Guide" version="2024.12" :menuItems="menuItems" />
     <div class="page-guide-content">
         <h2 class="page-guide-title">Layer PopUp</h2>
         <h3 class="page-guide-title2">basic popup</h3>
@@ -91,17 +79,18 @@
 <script setup lang="ts">
 import { useHead } from 'nuxt/app'
 import GuideNav from '../GuideNav.vue';
+import menuItems from '~/data/mobile/menuItems';
 import basicPopuLayer from '@/components/mobile/popup/basicPopup.vue';
 import buttonPopupLayer from '@/components/mobile/popup/buttonPopup.vue';
 import imgPopupLayer from '@/components/mobile/popup/imgPopup.vue';
 import toastPopupLayer from '@/components/mobile/popup/toastPopup.vue';
 import fullPopupLayer from '@/components/mobile/popup/fullPopup.vue';
 import fullBottomPopupLayer from '@/components/mobile/popup/fullBottomPopup.vue';
-
 import bottomPopupLayer from '@/components/mobile/popup/bottomPopup.vue';
 import bottomImgPopupLayer from '@/components/mobile/popup/bottomImgPopup.vue';
 import bottomMarketingPopupLayer from '@/components/mobile/popup/bottomMarketingPopup.vue';
 import selectPopupLayer from '@/components/mobile/popup/selectPoup.vue';
+
 //더미 테스트 이미지
 import testImg from '@/assets/images/desktop/about_us/about_img_01.png';
 
@@ -174,8 +163,8 @@ onMounted(() => {
 </script>
 
 <style  lang="scss">
-@import "@/assets/scss/mobile/guide.scss";
-@import "@/assets/scss/mobile/common.scss";
+    @import "@/assets/scss/mobile/guide.scss";
+    @import "@/assets/scss/mobile/common.scss";
 </style>
   
 
