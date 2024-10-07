@@ -1,3 +1,6 @@
+import { defineNuxtConfig } from 'nuxt/config';
+import vue from '@vitejs/plugin-vue'
+
 export default defineNuxtConfig({
   ssr: false,
   app: {
@@ -21,6 +24,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@pinia/nuxt', // Pinia 모듈 추가
   ],
 
   css: [
@@ -30,7 +34,11 @@ export default defineNuxtConfig({
   build: {
     // SCSS 관련 설정을 vite.build로 이동
   },
-
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag.startsWith('custom-'), // 예시: 'custom-'로 시작하는 요소를 사용자 정의 요소로 처리
+    },
+  },
   vite: {
     css: {
       preprocessorOptions: {

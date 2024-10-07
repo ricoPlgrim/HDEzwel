@@ -126,6 +126,9 @@
 			margin-top: 0;
 		}
 	}
+	&.is-visible{
+		visibility: visible;
+	}
 }
 
 .pop-alert {

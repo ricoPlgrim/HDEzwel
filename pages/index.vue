@@ -1,62 +1,34 @@
 <template>
-    <div class="redirect-animation">Redirecting...</div>
+  <div>
+    <h1>홈페이지</h1>
+    <p>이 페이지는 {{ device }} 버전입니다.</p>
+    <nuxt /> <!-- 현재 페이지를 렌더링 -->
+  </div>
 </template>
-  
-<script setup lang="ts">
-import { ref, computed, onMounted, watchEffect } from 'vue';
-import { useRouter } from 'vue-router';
 
-// `ref`로 데이터 정의
-const userAgent = ref('');
-const isMobile = ref(false);
+<script setup lang="ts">
+import { useDeviceStore } from '@/stores/device'; // Pinia 스토어 가져오기
+import { computed, onMounted, watch } from 'vue';
+import { useRouter } from 'nuxt/app'; // Nuxt의 라우터 가져오기
+
+const deviceStore = useDeviceStore();
+const device = computed(() => deviceStore.device); // Pinia 스토어에서 device 상태를 반응형으로 가져옵니다
+
+// Nuxt의 라우터 사용
 const router = useRouter();
 
-// 페이지 로드 시 실행
+// 페이지 로드 시 디바이스 감지
 onMounted(() => {
-    // 처음 페이지 로드 시 userAgent 값 설정
-    userAgent.value = navigator.userAgent;
-    isMobile.value = /mobile|android|iphone|ipad|ipod/i.test(userAgent.value);
+  deviceStore.detectDevice(); // 디바이스 감지 호출
+  // 초기 디바이스에 따라 리디렉션
+  router.push(device.value === 'mobile' ? '/mobile' : '/desktop'); 
 });
 
-// computed를 사용해 모바일 여부에 따라 라우팅을 처리
-const routeRedirect = computed(() => {
-    if (isMobile.value) {
-        return '/mobile';
-    } else {
-        return '/desktop';
-    }
+// device가 변경될 때마다 리디렉션 업데이트
+watch(device, (newDevice) => {
+  router.push(newDevice === 'mobile' ? '/mobile' : '/desktop'); // 디바이스 변경 시 리디렉션
 });
 
-// watchEffect를 사용해 computed가 변경될 때 라우팅 처리
-watchEffect(() => {
-    if (routeRedirect.value) {
-        router.push(routeRedirect.value).then(() => {
-            window.location.reload(); // 라우팅 후 페이지 새로고침
-        });
-    }
-});
-
+// 콘솔 로그로 상태 확인
+console.log("device ===>", device.value);
 </script>
-
-<style scoped>
-.redirect-animation {
-    font-size: 2em;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    animation: fadeInOut 2s infinite; /* 2초 동안 애니메이션 반복 */
-}
-
-/* Fade in and out animation */
-@keyframes fadeInOut {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-}
-</style>

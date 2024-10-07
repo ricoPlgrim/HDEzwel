@@ -99,6 +99,9 @@
             margin-top: 0;
         }
     }
+    &.is-visible{
+    	visibility: visible;
+    }
 }
 
 .pop-full {
@@ -164,6 +167,9 @@
                 padding: toRem(80px 20px 100px);
             }
         }
+    }
+    &.is-visible{
+    	visibility: visible;
     }
 }
 
@@ -247,6 +253,9 @@
             visibility: visible;
             transform: translateY(0)
         }
+    }
+    &.is-visible{
+    	visibility: visible;
     }
 }
 

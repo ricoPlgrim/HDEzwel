@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
-@use 'common/helper' as *;
+// @use 'common/helper' as *;
 
-@import 'common/base',
+@import 
+'common/variable',
+'common/mixin',
+'common/base',
 'common/layout',
 'common/animation',
 'common/popup',

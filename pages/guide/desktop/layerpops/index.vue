@@ -17,96 +17,95 @@
         <h3 class="page-guide-title2">basic popup</h3>
         <div class="page-guide-box">
             <div class="text">
-                selId와 st 문자열로 전달<br>
-                WC_UI.layerPopUp({selId:'레이어팝업아이디', st:닫기(close)});<br>
-                열기 : WC_UI.layerPopUp({selId:'#pop-layer'});<br>
-                닫기 : WC_UI.layerPopUp({selId:'#pop-layer', st: 'close'});
+                @click openPopup 이벤트 메소드<br />
+                예시 @click="openPopup('basicPopup')"
             </div>
             <div class="btn-wrap">
-                <a href="javascript:WC_UI.layerPopUp({selId:'#pop-layer'})" class="btn-type">basic</a>
-                <a href="javascript:WC_UI.layerPopUp({selId:'#pop-layer2'})" class="btn-type">button</a>
-                <a href="javascript:WC_UI.layerPopUp({selId:'#pop-layer3'})" class="btn-type">img</a>
-            </div>
-
-            <div class="pop-layer" id="pop-layer">
-                <div class="dim"></div>
-                <div class="pop-wrap">
-                    <div class="pop-content">
-                        <strong>Notice of delivery delay</strong>
-                        <p>Delivery may be delayed in some areas<br>due to strikes.</p>
-                    </div>
-                    <div class="btn-wrap">
-                        <a href="javascript:WC_UI.layerPopUp({selId:'#pop-layer', st: 'close'})"
-                            class="btn-type5">CONFIRM</a>
-                    </div>
-                </div>
-            </div>
-            <div class="pop-layer" id="pop-layer2">
-                <div class="dim"></div>
-                <div class="pop-wrap">
-                    <div class="pop-content">
-                        <strong>WCONCEPT NOTICE</strong>
-                        <p>The latest version has been released. Please<br>use it after updating to the new version.</p>
-                    </div>
-                    <div class="btn-wrap">
-                        <a href="javascript:WC_UI.layerPopUp({selId:'#pop-layer2', st: 'close'})"
-                            class="btn-type5">CONFIRM</a>
-                        <a href="javascript:WC_UI.layerPopUp({selId:'#pop-layer2', st: 'close'})"
-                            class="btn-type5 v2">UPDATE</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pop-layer" id="pop-layer3">
-                <div class="dim"></div>
-                <div class="pop-wrap v2">
-                    <div class="pop-content v2">
-                        <img src="@/assets/images/desktop/temp/@temp_pop_img.png" alt="">
-                    </div>
-                    <div class="btn-wrap">
-                        <a href="javascript:WC_UI.layerPopUp({selId:'#pop-layer3', st: 'close'})" class="btn-type5">DO
-                            NOT OPEN TODAY</a>
-                        <a href="javascript:WC_UI.layerPopUp({selId:'#pop-layer3', st: 'close'})"
-                            class="btn-type5">CLOSE</a>
-                    </div>
-                </div>
+                <button @click="openPopup('basicPopup')" class="btn-type">basic</button>
+                <button @click="openPopup('buttonPopup')" class="btn-type">button</button>
+                <button @click="openPopup('imgPopup')" class="btn-type">img</button>
             </div>
         </div>
 
         <h3 class="page-guide-title2">toast</h3>
         <div class="page-guide-box">
             <div class="text">
-                selId와 time 닫히는 시간<br>
-                WC_UI.toastPopUp({selId:'#toast01',time:3000});
+                toastPopupLayer컴포넌트<br />
+                title은 string값이고,<br />
+                :duration값은 토스트 팝업에 유지 시간  타입은 number,
+                이벤트 함수<br />
+                초기값: showToastPopup함수 실행이후<br />
+                onMounte 이후 이벤트 실행 
             </div>
 
-            <div id="toast01" class="toast-box">
-                The status has been changed to consent.
-            </div>
-            <div id="toast02" class="toast-box">
-                성공!
-            </div>
+
         </div>
     </div>
+    <basicPopuLayer ref="basicPopup" title="Notice of delivery delay" description="Delivery may be delayed in some areas"
+        checkText="CONFIRM" />
+    <buttonPopupLayer ref="buttonPopup" title="WCONCEPT NOTICE"
+        description="The latest version has been released. Please<br/>use it after updating to the new version."
+        leftText="CONFIRM" rightText="UPDATE" />
+
+    <imgPopupLayer ref="imgPopup" :imgSrc="testImg" imgAlt="테스트 이미지" leftText="DO NOT OPEN TODAY" rightText="CLOSE" />
+
+    <toastPopupLayer ref="toastPopup" title=" The status has been changed to consent." :duration="3000" />
 </template>
 
 <script setup lang="ts">
-import { useHead } from 'nuxt/app'
+import { useSeoMeta } from 'nuxt/app';
 import GuideNav from '../GuideNav.vue';
+import basicPopuLayer from '@/components/desktop/popup/basicPopup.vue';
+import buttonPopupLayer from '@/components/desktop/popup/buttonPopup.vue';
+import imgPopupLayer from '@/components/desktop/popup/imgPopup.vue';
+import toastPopupLayer from '@/components/desktop/popup/toastPopup.vue';
 
-useHead({
+
+//더미 테스트 이미지
+import testImg from '@/assets/images/desktop/about_us/about_img_01.png';
+
+useSeoMeta({
     title: 'HDEzwel PC Guide',
     meta: [
         { name: 'viewport', content: 'width=1460' }
     ]
 });
 
+const basicPopup = ref<InstanceType<typeof basicPopuLayer> | null>(null);
+const buttonPopup = ref<InstanceType<typeof buttonPopupLayer> | null>(null);
+const imgPopup = ref<InstanceType<typeof imgPopupLayer> | null>(null);
+const toastPopup = ref<InstanceType<typeof toastPopupLayer> | null>(null);
+
+
+const openPopup = (popupName: string) => {
+    switch (popupName) {
+        case 'basicPopup':
+            if (basicPopup.value) {
+                basicPopup.value.openPopup();
+            };
+            break;
+        case 'buttonPopup':
+            if (buttonPopup.value) buttonPopup.value.openPopup();
+            break;
+        case 'imgPopup':
+            if (imgPopup.value) imgPopup.value.openPopup();
+            break;
+    }
+};
+
+const showToastPopup = () => {
+  if (toastPopup.value) toastPopup.value.showPopup();
+};
+
+onMounted(() => {
+  showToastPopup();
+});
 
 </script>
 
-<style scoped lang="scss">
-@import "@/assets/scss/desktop/common.scss";
-@import "@/assets/scss/desktop/guide.scss";
+<style  lang="scss">
+    @import "@/assets/scss/desktop/guide.scss";
+    @import "@/assets/scss/desktop/common.scss";
 </style>
   
 
