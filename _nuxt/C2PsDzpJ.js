@@ -1,0 +1,1 @@
+import{Z as t}from"./B-7tHLe5.js";const s=t("device",{state:()=>({device:"desktop"}),actions:{detectDevice(){const e=navigator.userAgent;this.device=/mobile/i.test(e)?"mobile":"desktop"},setDevice(e){this.device=e}}});export{s as u};
